@@ -18,11 +18,11 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Venkateswarlu Maddula — Cloud Security Engineer',
+    default: 'Venkateswarlu Maddula — DevOps and Cloud Engineer',
     template: '%s | Venkateswarlu Maddula',
   },
   description:
-    'Cloud Security Engineer. Six years hardening AWS, Azure, and Kubernetes for regulated workloads. Zero-trust IAM, DevSecOps automation, compliance-as-code.',
+    'DevOps and Cloud Engineer. Six years hardening AWS, Azure, and Kubernetes for regulated workloads. Zero-trust IAM, DevSecOps automation, compliance-as-code.',
   keywords: [
     'Cloud Security Engineer', 'AWS Security', 'Azure Security',
     'Kubernetes Security', 'IAM', 'DevSecOps', 'Terraform',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://venkateswarlu.vercel.app',
-    title: 'Venkateswarlu Maddula — Cloud Security Engineer',
+    title: 'Venkateswarlu Maddula — DevOps and Cloud Engineer',
     description: 'Securing cloud platforms with automation, IAM, and DevSecOps.',
     siteName: 'Venkateswarlu Portfolio',
   },
