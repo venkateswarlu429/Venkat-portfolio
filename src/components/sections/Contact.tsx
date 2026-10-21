@@ -7,7 +7,7 @@ const channels = [
   { icon: Mail,     label: 'Email',     value: 'vm4537145@gmail.com',                                  href: 'mailto:vm4537145@gmail.com' },
   { icon: Linkedin, label: 'LinkedIn',  value: '/in/venkatswarlu-maddula',                             href: 'https://www.linkedin.com/in/venkatswarlu-maddula-53a890162/' },
   { icon: Github,   label: 'GitHub',    value: '@venkateswarlu429',                                    href: 'https://github.com/venkateswarlu429' },
-  { icon: MapPin,   label: 'Location',  value: 'Horsham, PA · UTC-5',                               href: '#' },
+  { icon: MapPin,   label: 'Location',  value: 'Norristown, PA · UTC-5',                               href: '#' },
 ]
 
 export default function Contact() {
@@ -32,7 +32,7 @@ export default function Contact() {
             </motion.h2>
 
             <p className="mt-5 text-fg-muted max-w-md">
-              Open to senior DevOps Engineer and platform-security roles. Async-first, ship fast, document everything.
+              Open to senior cloud-security and platform-security roles. Async-first, ship fast, document everything.
             </p>
 
             <a
@@ -59,7 +59,7 @@ export default function Contact() {
               </div>
               <div className="p-5 font-mono text-[12.5px] leading-7">
                 <div className="text-fg-dim">$ whoami</div>
-                <div className="text-fg">venkateswarlu · DevOps-Engineer</div>
+                <div className="text-fg">venkateswarlu · cloud-security-engineer</div>
                 <div className="text-fg-dim mt-3">$ list --channels</div>
                 <div className="mt-1 divide-y divide-default border border-default rounded">
                   {channels.map((c) => (
