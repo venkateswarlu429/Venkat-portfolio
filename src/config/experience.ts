@@ -10,7 +10,7 @@ export interface Experience {
 export const experienceData: Experience[] = [
   {
     company: 'Alcoa',
-    position: 'Azure DevOps Engineer',
+    position: 'Senior Azure DevOps Engineer',
     period: 'Mar 2025 - Present',
     description: 'Leading Azure cloud security initiatives, managing AKS security, and implementing SOX compliance controls.',
     achievements: [
@@ -37,7 +37,7 @@ export const experienceData: Experience[] = [
   {
     company: 'Wockhardt Limited',
     position: 'DevOps Engineer',
-    period: 'Nov 2021 - Nov 2023',
+    period: 'Nov 2022 - Nov 2023',
     description: 'Implemented DevSecOps practices, managed EKS security, and standardized infrastructure as code.',
     achievements: [
       'Migrated IAM policies to Terraform with least-privilege enforcement',
@@ -50,8 +50,8 @@ export const experienceData: Experience[] = [
   {
     company: 'Raheja QBE General Insurance',
     position: 'Cloud Engineer',
-    period: 'Jul 2019 - Oct 2021',
-    description: 'Established AWS security foundations, implemented compliance controls, and managed cloud infrastructure.',
+    period: 'Jul 2021 - Oct 2022',
+    description: •	'Provisioned segmented insurance landing zones with Terraform, Python, Bash, and version-controlled CI/CD workflows, wiring network boundaries, virtual machines, storage, and access policies for policy and claims services.',
     achievements: [
       'Hardened VPC security groups & NACLs for segmented insurance workloads',
       'Implemented ISO 27001 compliance controls using Config rules',
