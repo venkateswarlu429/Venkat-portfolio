@@ -51,7 +51,7 @@ export const experienceData: Experience[] = [
     company: 'Raheja QBE General Insurance',
     position: 'Cloud Engineer',
     period: 'Jul 2021 - Oct 2022',
-    description: •	'Provisioned segmented insurance landing zones with Terraform, Python, Bash, and version-controlled CI/CD workflows, wiring network boundaries, virtual machines, storage, and access policies for policy and claims services.',
+    description: 'Provisioned segmented insurance landing zones with Terraform, Python, Bash, and version-controlled CI/CD workflows, wiring network boundaries, virtual machines, storage, and access policies for policy and claims services.',
     achievements: [
       'Hardened VPC security groups & NACLs for segmented insurance workloads',
       'Implemented ISO 27001 compliance controls using Config rules',
