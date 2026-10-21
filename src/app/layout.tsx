@@ -18,11 +18,11 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Venkateswarlu Maddula — DevOps and Cloud Engineer',
+    default: 'Venkateswarlu Maddula — Senior DevOps Engineer',
     template: '%s | Venkateswarlu Maddula',
   },
   description:
-    'DevOps and Cloud Engineer with experience in AWS, Azure, Kubernetes, Terraform, CI/CD automation, and reliable cloud infrastructure.',
+    'Senior DevOps Engineer specializing in AWS, Azure, Kubernetes, Terraform, CI/CD automation, and reliable cloud infrastructure.',
   keywords: [
     'DevOps Engineer', 'Cloud Engineer', 'AWS', 'Azure',
     'Kubernetes', 'Terraform', 'CI/CD', 'Infrastructure as Code',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://venkateswarlu.vercel.app',
-    title: 'Venkateswarlu Maddula — DevOps and Cloud Engineer',
-    description: 'Building reliable cloud platforms with automation, infrastructure as code, Kubernetes, and CI/CD.',
+    title: 'Venkateswarlu Maddula — Senior DevOps Engineer',
+    description: 'Senior DevOps Engineer building reliable cloud platforms with automation, infrastructure as code, Kubernetes, and CI/CD.',
     siteName: 'Venkateswarlu Portfolio',
   },
   robots: { index: true, follow: true },
