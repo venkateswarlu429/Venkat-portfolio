@@ -50,7 +50,7 @@ export default function Header() {
             <span className="absolute inset-0 rounded-full bg-accent animate-pulseGlow" />
             <span className="absolute inset-0 rounded-full bg-accent blur-md opacity-50" />
           </span>
-          <span className="font-mono text-[13px] tracking-widest text-fg">VM<span className="text-accent">.</span>SEC</span>
+          <span className="font-mono text-[13px] tracking-widest text-fg">VM<span className="text-accent">.</span>DEVOPS</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">
