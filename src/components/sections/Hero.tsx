@@ -65,9 +65,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.05 }}
             className="text-[44px] sm:text-6xl lg:text-7xl font-semibold leading-[0.95] tracking-tight"
           >
-            Cloud
+            DevOps
             <br />
-            <span className="text-gradient-accent">Security</span>
+            <span className="text-gradient-accent">Cloud</span>
             <br />
             Engineer
             <span className="inline-block w-[6px] h-[0.85em] align-baseline ml-2 bg-accent animate-blink" />
@@ -79,8 +79,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="text-fg-muted text-base sm:text-lg max-w-md"
           >
-            I harden multi-cloud platforms with zero-trust IAM, signed-image pipelines,
-            and Python-driven auto-remediation.
+            I build and automate reliable cloud infrastructure, CI/CD pipelines, and Kubernetes platforms across AWS and Azure.
           </motion.p>
 
           <motion.div
@@ -138,7 +137,7 @@ export default function Hero() {
                 <span className="h-2 w-2 rounded-full bg-accent-warn" />
                 <span className="h-2 w-2 rounded-full bg-accent-2" />
                 <span className="ml-3 font-mono text-[10px] tracking-widest text-fg-dim">
-                  /var/log/security · live
+                  /var/log/platform · live
                 </span>
               </div>
               <span suppressHydrationWarning className="font-mono text-[10px] tracking-widest text-fg-dim">
