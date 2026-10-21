@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     template: '%s | Venkateswarlu Maddula',
   },
   description:
-    'DevOps and Cloud Engineer. Six years hardening AWS, Azure, and Kubernetes for regulated workloads. Zero-trust IAM, DevSecOps automation, compliance-as-code.',
+    'DevOps and Cloud Engineer. Five years hardening AWS, Azure, and Kubernetes for regulated workloads. Zero-trust IAM, DevSecOps automation, compliance-as-code.',
   keywords: [
-    'Cloud Security Engineer', 'AWS Security', 'Azure Security',
+    'Senior DevOps Engineer', 'AWS Security', 'Azure Security',
     'Kubernetes Security', 'IAM', 'DevSecOps', 'Terraform',
     'Zero Trust', 'SOX', 'ISO 27001',
   ],
