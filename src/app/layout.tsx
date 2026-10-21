@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     template: '%s | Venkateswarlu Maddula',
   },
   description:
-    'DevOps and Cloud Engineer. Five years hardening AWS, Azure, and Kubernetes for regulated workloads. Zero-trust IAM, DevSecOps automation, compliance-as-code.',
+    'DevOps and Cloud Engineer with experience in AWS, Azure, Kubernetes, Terraform, CI/CD automation, and reliable cloud infrastructure.',
   keywords: [
-    'Senior DevOps Engineer', 'AWS Security', 'Azure Security',
-    'Kubernetes Security', 'IAM', 'DevSecOps', 'Terraform',
-    'Zero Trust', 'SOX', 'ISO 27001',
+    'DevOps Engineer', 'Cloud Engineer', 'AWS', 'Azure',
+    'Kubernetes', 'Terraform', 'CI/CD', 'Infrastructure as Code',
+    'GitHub Actions', 'Jenkins', 'Site Reliability Engineering',
   ],
   authors: [{ name: 'Maddula Venkateswarlu' }],
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://venkateswarlu.vercel.app',
     title: 'Venkateswarlu Maddula — DevOps and Cloud Engineer',
-    description: 'Securing cloud platforms with automation, IAM, and DevSecOps.',
+    description: 'Building reliable cloud platforms with automation, infrastructure as code, Kubernetes, and CI/CD.',
     siteName: 'Venkateswarlu Portfolio',
   },
   robots: { index: true, follow: true },
