@@ -14,7 +14,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: 'Maddula Venkateswarlu',
   title: 'Venkateswarlu Maddula | Cloud Security Engineer',
-  description: 'Cloud Security Engineer specializing in AWS, Azure, Kubernetes security, and DevSecOps automation.',
+  description: 'Senior DevOps Engineer specializing in AWS, Azure, Kubernetes security, and DevSecOps automation.',
   url: 'https://venkateswarlu.vercel.app',
   email: 'vm4537145@gmail.com',
   social: {
