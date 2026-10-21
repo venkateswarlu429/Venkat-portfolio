@@ -15,7 +15,7 @@ type Metric = {
 
 const metrics: Metric[] = [
   {
-    label: 'YEARS · CLOUD SECURITY',
+    label: 'YEARS · DEVOPS & CLOUD',
     value: 6,
     suffix: '+',
     caption: 'AWS · Azure · Kubernetes',
