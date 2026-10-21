@@ -7,7 +7,7 @@ const channels = [
   { icon: Mail,     label: 'Email',     value: 'vm4537145@gmail.com',                                  href: 'mailto:vm4537145@gmail.com' },
   { icon: Linkedin, label: 'LinkedIn',  value: '/in/venkatswarlu-maddula',                             href: 'https://www.linkedin.com/in/venkatswarlu-maddula-53a890162/' },
   { icon: Github,   label: 'GitHub',    value: '@venkateswarlu429',                                    href: 'https://github.com/venkateswarlu429' },
-  { icon: MapPin,   label: 'Location',  value: 'Norristown, PA · UTC-5',                               href: '#' },
+  { icon: MapPin,   label: 'Location',  value: 'Horsham, PA · UTC-5',                               href: '#' },
 ]
 
 export default function Contact() {
