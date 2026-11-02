@@ -55,7 +55,7 @@ export default function Hero() {
               <span className="absolute inset-0 rounded-full bg-accent-2 animate-ping" />
             </span>
             <span className="font-mono text-[10px] tracking-[0.2em] text-fg-muted">
-              SYSTEM · OPERATIONAL · 6Y UPTIME
+              SYSTEM · OPERATIONAL · 5Y+ UPTIME
             </span>
           </motion.div>
 

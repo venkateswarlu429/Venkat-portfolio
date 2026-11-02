@@ -91,7 +91,7 @@ export default function Tools() {
       </div>
 
       <div className="container-custom mt-8 flex items-center justify-between label-mono">
-        <span>{rowA.length + rowB.length} tools · 6 years · 4 frameworks</span>
+        <span>{rowA.length + rowB.length} tools · 5+ years · 4 frameworks</span>
         <span className="text-accent">[ continuous integration ]</span>
       </div>
     </section>

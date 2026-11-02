@@ -16,7 +16,7 @@ type Metric = {
 const metrics: Metric[] = [
   {
     label: 'YEARS · DEVOPS & CLOUD',
-    value: 6,
+    value: 5,
     suffix: '+',
     caption: 'AWS · Azure · Kubernetes',
     series: [3, 4, 5, 6, 6, 7, 8, 8, 9, 10, 11, 12],
@@ -133,7 +133,7 @@ export default function Impact() {
           </div>
           <div className="hidden sm:flex items-center gap-2 label-mono">
             <span className="h-1.5 w-1.5 rounded-full bg-accent-2 animate-pulseGlow" />
-            live · 2019 → present
+            live · 2021 → present
           </div>
         </div>
 

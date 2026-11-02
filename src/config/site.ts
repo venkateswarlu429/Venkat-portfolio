@@ -19,7 +19,7 @@ export const siteConfig: SiteConfig = {
   email: 'vm4537145@gmail.com',
   social: {
     github: 'https://github.com/venkateswarlu429',
-    linkedin: 'https://www.linkedin.com/in/venkatswarlu-maddula-53a890162/',
+    linkedin: 'https://www.linkedin.com/in/venkateswarlu-maddula-53a890162/',
     twitter: 'https://twitter.com/venkateswarlu',
   },
 }

@@ -22,7 +22,7 @@ export default function Timeline() {
               Trajectory
             </h2>
           </div>
-          <div className="hidden sm:block label-mono">2019 → present</div>
+          <div className="hidden sm:block label-mono">2021 → present</div>
         </div>
 
         <div ref={ref} className="relative">

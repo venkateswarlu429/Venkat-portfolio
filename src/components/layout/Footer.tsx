@@ -21,7 +21,7 @@ export default function Footer() {
             <Github size={14} />
           </a>
           <a
-            href="https://www.linkedin.com/in/venkatswarlu-maddula-53a890162/"
+            href="https://www.linkedin.com/in/venkateswarlu-maddula-53a890162/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 border border-default rounded hover:border-accent hover:text-accent transition-colors"
