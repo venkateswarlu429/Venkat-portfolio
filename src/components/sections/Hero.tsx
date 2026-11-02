@@ -1,39 +1,31 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
-import SecurityMesh from '../viz/SecurityMesh'
 
-const tickerEvents = [
-  { t: 'IAM',     msg: 'over-privileged role quarantined', sev: 'warn' },
-  { t: 'EKS',     msg: 'unsigned image · admission denied', sev: 'high' },
-  { t: 'KMS',     msg: 'key rotation enforced · 84 keys',   sev: 'ok'   },
-  { t: 'AAD',     msg: 'PIM elevation · auto-revoked',      sev: 'ok'   },
-  { t: 'CT',      msg: 'anomalous API call · isolated',     sev: 'high' },
-  { t: 'CONFIG',  msg: 'S3 public ACL · auto-remediated',   sev: 'warn' },
+const deliverySteps = [
+  {
+    step: '01',
+    title: 'Code & IaC',
+    text: 'Terraform, Ansible, and app code — everything versioned, reviewed, and repeatable.',
+  },
+  {
+    step: '02',
+    title: 'CI/CD & GitOps',
+    text: 'Gated pipelines and GitOps sync — signed releases, staged rollouts, rollback-ready.',
+  },
+  {
+    step: '03',
+    title: 'Kubernetes',
+    text: 'EKS and AKS platforms — scaling, safe rollouts and rollbacks, day-2 operations.',
+  },
+  {
+    step: '04',
+    title: 'Observe',
+    text: 'Prometheus, Grafana, and SLO-based alerts that page on user impact, not noise.',
+  },
 ]
 
-const sevColor: Record<string, string> = {
-  ok:   'text-accent-2',
-  warn: 'text-accent-warn',
-  high: 'text-[hsl(var(--accent-danger))]',
-}
-
 export default function Hero() {
-  const [tick, setTick] = useState(0)
-  const [now, setNow] = useState<string>('')
-
-  useEffect(() => {
-    const id = setInterval(() => setTick((t) => (t + 1) % tickerEvents.length), 2200)
-    const stamp = () => setNow(new Date().toISOString().slice(0, 19))
-    stamp()
-    const clock = setInterval(stamp, 1000)
-    return () => {
-      clearInterval(id)
-      clearInterval(clock)
-    }
-  }, [])
-
   return (
     <section
       id="hero"
@@ -43,7 +35,7 @@ export default function Hero() {
       <div className="absolute inset-x-0 top-14 h-px hairline-x" />
 
       <div className="container-custom grid lg:grid-cols-12 gap-10 items-center relative">
-        <div className="lg:col-span-5 space-y-6">
+        <div className="lg:col-span-6 space-y-6">
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,7 +47,7 @@ export default function Hero() {
               <span className="absolute inset-0 rounded-full bg-accent-2 animate-ping" />
             </span>
             <span className="font-mono text-[10px] tracking-[0.2em] text-fg-muted">
-              SYSTEM · OPERATIONAL · 5Y+ UPTIME
+              5Y+ EXPERIENCE · DEVOPS &amp; PLATFORM
             </span>
           </motion.div>
 
@@ -67,19 +59,30 @@ export default function Hero() {
           >
             Senior
             <br />
-            <span className="text-gradient-accent">DevOps</span>
+            <span className="text-gradient-accent">DevOps &amp; Platform</span>
             <br />
             Engineer
-            <span className="inline-block w-[6px] h-[0.85em] align-baseline ml-2 bg-accent animate-blink" />
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="text-fg-muted text-base sm:text-lg max-w-md"
+            className="text-fg-muted text-base sm:text-lg max-w-lg"
           >
-            I build and automate reliable cloud infrastructure, CI/CD pipelines, and Kubernetes platforms across AWS and Azure.
+            I build and run reliable cloud platforms — Kubernetes,
+            infrastructure as code, and CI/CD pipelines across AWS and Azure.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-fg text-sm sm:text-base max-w-lg flex items-center gap-2"
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-2 animate-pulseGlow flex-none" />
+            Open to DevOps, platform, and SRE roles — remote or on-site,
+            anywhere in the U.S.
           </motion.p>
 
           <motion.div
@@ -92,14 +95,14 @@ export default function Hero() {
               href="#work"
               className="group relative inline-flex items-center gap-2 h-11 px-5 rounded bg-accent text-bg font-medium text-sm tracking-wide hover:opacity-90 transition"
             >
-              View work
+              View projects
               <span className="font-mono text-xs opacity-70">↘</span>
             </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 h-11 px-5 rounded border border-strong text-fg hover:border-accent hover:text-accent transition"
             >
-              <span className="font-mono text-xs">~/</span> contact
+              Get in touch
             </a>
           </motion.div>
 
@@ -110,9 +113,9 @@ export default function Hero() {
             className="mt-6 grid grid-cols-3 max-w-md gap-px bg-default border border-default rounded-lg overflow-hidden"
           >
             {[
-              { k: 'AWS',   v: 'multi-account' },
-              { k: 'AZURE', v: 'SOX-ready' },
-              { k: 'K8S',   v: 'admission-hardened' },
+              { k: 'AWS',        v: 'production' },
+              { k: 'AZURE',      v: 'production' },
+              { k: 'KUBERNETES', v: 'EKS · AKS' },
             ].map((c) => (
               <div key={c.k} className="bg-elev/80 p-3">
                 <div className="font-mono text-[10px] tracking-widest text-fg-dim">{c.k}</div>
@@ -123,44 +126,35 @@ export default function Hero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="lg:col-span-7 relative"
+          className="lg:col-span-6 relative"
         >
-          <SecurityMesh />
-
-          <div className="mt-4 surface-card rounded-lg overflow-hidden">
+          <div className="surface-card rounded-xl overflow-hidden">
             <div className="flex items-center justify-between px-4 py-2 border-b border-default">
-              <div className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-[hsl(var(--accent-danger))]" />
-                <span className="h-2 w-2 rounded-full bg-accent-warn" />
-                <span className="h-2 w-2 rounded-full bg-accent-2" />
-                <span className="ml-3 font-mono text-[10px] tracking-widest text-fg-dim">
-                  /var/log/platform · live
-                </span>
-              </div>
-              <span suppressHydrationWarning className="font-mono text-[10px] tracking-widest text-fg-dim">
-                {now ? `${now}Z` : '----------T--:--:--Z'}
-              </span>
+              <span className="label-mono">How I deliver</span>
+              <span className="label-mono text-accent-2">end to end</span>
             </div>
-            <div className="px-4 py-3 font-mono text-[12px] h-[68px] overflow-hidden">
-              {tickerEvents.map((e, i) => {
-                const offset = (i - tick + tickerEvents.length) % tickerEvents.length
-                if (offset > 2) return null
-                return (
-                  <div
-                    key={i}
-                    className="flex items-center gap-3 leading-6 transition-opacity"
-                    style={{ opacity: offset === 0 ? 1 : 0.4 - offset * 0.15 }}
-                  >
-                    <span className="text-fg-dim">{String(i).padStart(3, '0')}</span>
-                    <span className="text-fg-muted">{e.t.padEnd(7, ' ')}</span>
-                    <span className={sevColor[e.sev]}>●</span>
-                    <span className="text-fg/90">{e.msg}</span>
+            <div className="divide-y divide-default">
+              {deliverySteps.map((s) => (
+                <div key={s.step} className="flex gap-4 px-5 py-4">
+                  <span className="font-mono text-sm text-accent pt-0.5">{s.step}</span>
+                  <div>
+                    <div className="font-medium text-fg">{s.title}</div>
+                    <div className="text-sm text-fg-muted mt-0.5 leading-relaxed">{s.text}</div>
                   </div>
-                )
-              })}
+                </div>
+              ))}
+            </div>
+            <div className="px-5 py-4 border-t border-default bg-elev/40">
+              <div className="text-xs text-fg-muted leading-relaxed">
+                <span className="text-fg">Currently —</span> Senior Azure DevOps
+                Engineer · Alcoa · Mar 2025 → Present
+              </div>
+              <div className="text-xs text-fg-muted leading-relaxed mt-1">
+                Horsham, PA · Open to remote &amp; relocation
+              </div>
             </div>
           </div>
         </motion.div>

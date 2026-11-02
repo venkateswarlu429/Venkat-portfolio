@@ -18,23 +18,24 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Venkateswarlu Maddula — Senior DevOps Engineer',
+    default: 'Venkateswarlu Maddula — Senior DevOps & Platform Engineer',
     template: '%s | Venkateswarlu Maddula',
   },
   description:
-    'Senior DevOps Engineer specializing in AWS, Azure, Kubernetes, Terraform, CI/CD automation, and reliable cloud infrastructure.',
+    'Senior DevOps & Platform Engineer building reliable cloud platforms with Kubernetes, infrastructure as code, and CI/CD across AWS and Azure. Open to DevOps, platform, and SRE roles.',
   keywords: [
-    'DevOps Engineer', 'Cloud Engineer', 'AWS', 'Azure',
-    'Kubernetes', 'Terraform', 'CI/CD', 'Infrastructure as Code',
-    'GitHub Actions', 'Jenkins', 'Site Reliability Engineering',
+    'DevOps Engineer', 'Platform Engineer', 'Site Reliability Engineer',
+    'Cloud Engineer', 'AWS', 'Azure', 'Kubernetes', 'Terraform', 'CI/CD',
+    'Infrastructure as Code', 'GitHub Actions', 'Jenkins', 'GitOps',
+    'ArgoCD', 'Docker', 'Grafana', 'Prometheus',
   ],
   authors: [{ name: 'Maddula Venkateswarlu' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://venkateswarlu.vercel.app',
-    title: 'Venkateswarlu Maddula — Senior DevOps Engineer',
-    description: 'Senior DevOps Engineer building reliable cloud platforms with automation, infrastructure as code, Kubernetes, and CI/CD.',
+    url: 'https://venkat-portfolio-zeh6.vercel.app/',
+    title: 'Venkateswarlu Maddula — Senior DevOps & Platform Engineer',
+    description: 'Senior DevOps & Platform Engineer building reliable cloud platforms with Kubernetes, infrastructure as code, and CI/CD across AWS and Azure. Open to DevOps, platform, and SRE roles.',
     siteName: 'Venkateswarlu Portfolio',
   },
   robots: { index: true, follow: true },

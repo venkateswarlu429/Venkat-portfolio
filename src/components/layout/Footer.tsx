@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container-custom py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3 font-mono text-[11px] tracking-widest text-fg-muted">
           <span className="h-1.5 w-1.5 rounded-full bg-accent-2 animate-pulseGlow" />
-          SYSTEM/SECURE · {year} · MADDULA VENKATESWARLU
+          SYSTEM · {year} · MADDULA VENKATESWARLU · DEVOPS &amp; PLATFORM ENGINEER
         </div>
         <div className="flex items-center gap-2">
           <a

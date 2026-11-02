@@ -26,13 +26,13 @@ export default function Contact() {
               transition={{ duration: 0.5 }}
               className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1]"
             >
-              Got a perimeter
-              <br />
-              that needs <span className="text-gradient-accent">hardening?</span>
+              Looking for a<br />
+              <span className="text-gradient-accent">DevOps / platform engineer?</span>
             </motion.h2>
 
             <p className="mt-5 text-fg-muted max-w-md">
-              Open to senior cloud-security and platform-security roles. Async-first, ship fast, document everything.
+              Open to DevOps, platform, and SRE roles — remote or on-site,
+              anywhere in the U.S. Async-first, ship fast, document everything.
             </p>
 
             <a
@@ -59,7 +59,7 @@ export default function Contact() {
               </div>
               <div className="p-5 font-mono text-[12.5px] leading-7">
                 <div className="text-fg-dim">$ whoami</div>
-                <div className="text-fg">venkateswarlu · cloud-security-engineer</div>
+                <div className="text-fg">venkateswarlu · devops-platform-engineer</div>
                 <div className="text-fg-dim mt-3">$ list --channels</div>
                 <div className="mt-1 divide-y divide-default border border-default rounded">
                   {channels.map((c) => (

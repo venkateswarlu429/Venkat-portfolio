@@ -1,63 +1,33 @@
-export interface Skill {
-  name: string
-  icon: string
-  level: number
-}
-
 export interface SkillCategory {
   category: string
-  skills: Skill[]
+  blurb: string
+  skills: string[]
 }
 
 export const skillsData: SkillCategory[] = [
   {
     category: 'Cloud Platforms',
-    skills: [
-      { name: 'AWS', icon: '☁️', level: 95 },
-      { name: 'Azure', icon: '🔷', level: 90 },
-      { name: 'IAM', icon: '🔐', level: 95 },
-      { name: 'VPC/Networking', icon: '🌐', level: 90 },
-      { name: 'KMS', icon: '🔑', level: 85 },
-    ],
+    blurb: 'Production workloads across both clouds.',
+    skills: ['AWS', 'Azure'],
   },
   {
-    category: 'Container & Orchestration',
-    skills: [
-      { name: 'Kubernetes', icon: '☸️', level: 90 },
-      { name: 'EKS', icon: '📦', level: 88 },
-      { name: 'AKS', icon: '🎯', level: 85 },
-      { name: 'RBAC', icon: '👥', level: 90 },
-      { name: 'Network Policies', icon: '🛡️', level: 85 },
-    ],
-  },
-  {
-    category: 'Security & Compliance',
-    skills: [
-      { name: 'Security Hub', icon: '🔒', level: 92 },
-      { name: 'GuardDuty', icon: '👁️', level: 88 },
-      { name: 'Config', icon: '⚙️', level: 90 },
-      { name: 'CloudTrail', icon: '📊', level: 90 },
-      { name: 'Azure Security', icon: '🛡️', level: 87 },
-    ],
+    category: 'Kubernetes & Containers',
+    blurb: 'Cluster platforms and container delivery.',
+    skills: ['Kubernetes', 'EKS', 'AKS', 'Docker'],
   },
   {
     category: 'IaC & Automation',
-    skills: [
-      { name: 'Terraform', icon: '🏗️', level: 95 },
-      { name: 'Python', icon: '🐍', level: 92 },
-      { name: 'Bash', icon: '💻', level: 88 },
-      { name: 'Lambda', icon: '⚡', level: 85 },
-      { name: 'Azure Functions', icon: '⚙️', level: 83 },
-    ],
+    blurb: 'Everything versioned, repeatable, and reviewable.',
+    skills: ['Terraform', 'Ansible', 'Python', 'Bash', 'PowerShell'],
   },
   {
-    category: 'DevSecOps',
-    skills: [
-      { name: 'GitLab CI', icon: '🦊', level: 88 },
-      { name: 'Azure DevOps', icon: '🔵', level: 90 },
-      { name: 'SAST', icon: '🔍', level: 85 },
-      { name: 'Container Scan', icon: '📦', level: 87 },
-      { name: 'Trivy', icon: '🔐', level: 82 },
-    ],
+    category: 'CI/CD & GitOps',
+    blurb: 'Pipelines as code, gated deploys, GitOps sync.',
+    skills: ['GitHub Actions', 'Azure DevOps', 'Jenkins', 'GitLab CI', 'ArgoCD'],
+  },
+  {
+    category: 'Observability',
+    blurb: 'Metrics, dashboards, and alerts that page on user impact.',
+    skills: ['Grafana', 'Prometheus', 'Azure Monitor', 'CloudWatch'],
   },
 ]

@@ -17,9 +17,9 @@ export default function Timeline() {
       <div className="container-custom">
         <div className="flex items-end justify-between mb-12">
           <div>
-            <div className="label-mono mb-2">04 / Path</div>
+            <div className="label-mono mb-2">04 / Experience</div>
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-              Trajectory
+              Experience
             </h2>
           </div>
           <div className="hidden sm:block label-mono">2021 → present</div>
