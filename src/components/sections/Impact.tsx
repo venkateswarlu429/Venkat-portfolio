@@ -10,7 +10,7 @@ const highlights = [
     caption: '2021 → present, across AWS and Azure',
   },
   {
-    value: '13',
+    value: '14',
     unit: 'projects',
     label: 'Open-source platform projects',
     caption: 'Public on GitHub, with code, docs, and CI',

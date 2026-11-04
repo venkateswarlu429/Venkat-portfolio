@@ -9,6 +9,13 @@ const gh = (repo: string) => `https://github.com/venkateswarlu429/${repo}`
 
 export const projectsData: Project[] = [
   {
+    title: 'Live DevOps Platform',
+    description:
+      'End-to-end DevOps demo, live in production: a small Python API and static frontend showing its own live health, version, and status — Dockerized, tested and shipped through GitHub Actions CI/CD, deployed on Vercel\'s free tier. Live at live-devops-platform.vercel.app.',
+    technologies: ['Python', 'Docker', 'GitHub Actions', 'Vercel'],
+    github: gh('Live-devops-platform'),
+  },
+  {
     title: 'Terraform AWS EKS Platform',
     description:
       'Complete Kubernetes platform on AWS: VPC, EKS with managed node groups and IRSA, and a private PostgreSQL RDS reachable only from inside the cluster — three composable Terraform modules.',

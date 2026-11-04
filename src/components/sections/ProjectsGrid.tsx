@@ -16,7 +16,7 @@ export default function ProjectsGrid() {
             </h2>
           </div>
           <div className="hidden sm:flex items-center gap-2 label-mono">
-            13 open-source projects
+            14 open-source projects
           </div>
         </div>
 
@@ -81,7 +81,7 @@ export default function ProjectsGrid() {
             className="group inline-flex items-center gap-2 h-11 px-5 rounded border border-strong text-fg hover:border-accent hover:text-accent transition-colors text-sm font-medium"
           >
             <Github size={16} />
-            See all 13 projects on GitHub
+            See all 14 projects on GitHub
             <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
         </div>
